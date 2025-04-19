@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Wonders of the World</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFFFFF;
+        }
+        
+        body {
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        .container {
+            max-width: 100%;
+            padding: 16px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid rgba(0, 176, 123, 0.48);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #00B07B;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 16px;
+        }
+        
+        .wonders-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+        
+        @media (min-width: 768px) {
+            .wonders-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .wonders-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .wonder-card {
+            background-color: rgba(0, 176, 123, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 176, 123, 0.48);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .wonder-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 176, 123, 0.2);
+        }
+        
+        .wonder-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .wonder-info {
+            padding: 16px;
+        }
+        
+        .wonder-title {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: #00B07B;
+        }
+        
+        .wonder-description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 16px;
+            margin-top: 32px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            border-top: 1px solid rgba(0, 176, 123, 0.48);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Seven Wonders of the World</h1>
+            <p class="subtitle">Explore these magnificent architectural marvels from around the globe</p>
+        </header>
+        
+        <main class="wonders-grid">
+            <div class="wonder-card">
+                <img src="https://fal.media/files/rabbit/UKlx797IFelGobVa69fB9_c6d2e753716941148239da643690cb8e.jpg" alt="Taj Mahal" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Taj Mahal</h2>
+                    <p class="wonder-description">An ivory-white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife. It's an iconic symbol of Indian heritage located in Agra, India.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/zebra/3tWf1T2FH24AGhOjpS0i8_d3954e5b4dfb4b85a0b3f1b7df8f6b2e.jpg" alt="Great Wall of China" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Great Wall of China</h2>
+                    <p class="wonder-description">A series of fortifications built along the northern borders of ancient Chinese states and Imperial China as protection against invasions. It stretches approximately a whopping 13,171 miles.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/panda/LcPN4b1kO5JaJVJ6cfv2F_ba7bea86ab8541a09d8da3c3bcb6d057.jpg" alt="Petra" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Petra</h2>
+                    <p class="wonder-description">A historical and archaeological city in southern Jordan famous for its rock-cut architecture. Established around 312 BCE as the capital city of the Arab Nabataeans, it's also known as the "Rose City."</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/monkey/e9SQa-NRE5GTBZ_9X7Ro0_3a56d7e35dab4149907d0f6101cf6826.jpg" alt="Colosseum" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Colosseum</h2>
+                    <p class="wonder-description">An oval amphitheatre in the center of Rome, Italy. Built of travertine limestone, volcanic rock, and concrete, it was the largest amphitheatre ever built at the time and held up to 80,000 spectators.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/tiger/HioFpSovR_Cc-UbDx9pna_488d3c887534416b8e983ddd51c561c7.jpg" alt="Chichen Itza" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Chichen Itza</h2>
+                    <p class="wonder-description">A complex of Mayan ruins on Mexico's Yucatán Peninsula. A massive step pyramid known as El Castillo dominates the ancient city, which thrived from around 600 A.D. to the 1200s.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/tiger/2bQymQmwmsZDcYie3EoN0_e30f6a4502d648d38d346fe985c64075.jpg" alt="Machu Picchu" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Machu Picchu</h2>
+                    <p class="wonder-description">An Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it's renowned for its sophisticated dry-stone walls and panoramic views.</p>
+                </div>
+            </div>
+            
+            <div class="wonder-card">
+                <img src="https://fal.media/files/rabbit/qQdx_5WLnZJJRbLVFCo5U_28ea446fef014891ba4f4cf731b24b3d.jpg" alt="Christ the Redeemer" class="wonder-image">
+                <div class="wonder-info">
+                    <h2 class="wonder-title">Christ the Redeemer</h2>
+                    <p class="wonder-description">A colossal statue of Jesus Christ at the summit of Mount Corcovado in Rio de Janeiro, Brazil. Created by French sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, it stands 98 feet tall.</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Discover the beauty and history of these magnificent wonders from around the world</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Simple animation when scrolling to make cards appear with slight delay
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.wonder-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = 1;
+                        }, index * 100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transition = 'opacity 0.5s ease, transform 0.3s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
